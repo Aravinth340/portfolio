@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfitFilo</title>
+    <style>
+            body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#000000;
+            color: aqua;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+                nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+                nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #f4e8e8;
+            color: black;
+        }
+
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .main {
+            padding: 20px;
+            background: #000000;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 5s;
+        }
+        @keyframes fadeIn {
+            from {opacity:0; 
+            }
+            to {opacity:1; 
+            }
+            
+        }
+        .profile-img {
+            float: left;
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+            border-radius: 50%;
+            animation: slideIn 2s;
+        }
+        @keyframes slideIn {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+        .content {
+            overflow: hidden;
+        }
+        h1 {
+            margin-top: 0;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+
+    </head>
+<body>
+    <header>
+        <h1>Welcome to ARAVINTH'S Portfolio</h1>
+    </header>
+    <nav>
+        <a href="portfolio.html">Home</a>
+        <a href="projects.html">MY PROJECTS</a>
+        <a href="#about.html">About me</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="main">
+            <img src="http://localhost/portfolio/img/IMG_20240919_221106_904.jpg" alt="Profile Image" class="profile-img">
+            <div class="content">
+                <h1>Aravinth</h1>
+                <h3>Hello! I am Aravinth, a student currently doing my diplama final year course at chendhuran polytechnic college i'm doing with a passion for creating beautiful and functional websites. I have learnt in HTML, CSS, JavaScript, and various frameworks. Check out my projects by clicking My projects in above taskbar!</h3>
+            </div>
+        </div>
+    </div>
+   
+    <footer>
+        <p>&copy; 2025 ARAVINTH'S Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

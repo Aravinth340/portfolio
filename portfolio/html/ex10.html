@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<style>
+.error { color: red; }
+input { color:purple;}
+</style>
+</head>
+<body>
+<h2>Registration Form</h2>
+<form id="registrationForm" onsubmit="return validateForm()">
+<label for="username">Username:</label><br>
+<input type="text" id="username" name="username"><br>
+
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email"><br>
+
+<label for="password">Password:</label><br>
+<input type="password" id="password" name="password"><br>
+
+<label for="retypePassword">Retype Password:</label><br>
+<input type="password" id="retypePassword" name="retypePassword"><br>
+
+<label>Gender:</label><br>
+<input type="radio" id="male" name="gender" value="male">
+<label for="male">Male</label><br>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label><br>
+
+<label>Languages known:</label><br>
+<input type="checkbox" id="english" name="languages" value="english">
+<label for="english">English</label><br>
+<input type="checkbox" id="tamil " name="languages" value="tamil ">
+<label for="tamil ">Tamil</label><br>
+<input type="checkbox" id="hindi " name="languages" value="hindi ">
+<label for="hindi ">Hindi</label><br>
+
+<label for="description">Describe yourself:</label><br>
+<textarea id="description" name="description" rows="4" cols="50"></textarea><br>
+<input type="submit" value="Submit">
+</form>
+
+<script>
+    function validateForm() {
+      var username = document.getElementById('username').value;
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('password').value;
+      var retypePassword = document.getElementById('retypePassword').value;
+
+      if (username.length< 8) {
+alert('Username must be at least 8 characters long');
+        return false;
+      }
+ if (!validateEmail(email)) {
+alert('Invalid email format');
+        return false;
+      }
+      if (password !== retypePassword) {
+alert('Passwords do not match');
+        return false;
+      }
+
+      return true;
+    }
+
+
+
+

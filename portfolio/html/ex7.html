@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Media Control</title>
+<style>
+        #controls {
+            margin-top: 10px;
+        }
+        button {
+            margin-right: 5px;
+        }
+</style>
+</head>
+<body>
+<video id="mediaPlayer" width="300" controls>
+<source src="http://localhost/portfolio/html/Y19s_Blue_720%c3%971600.mp4">
+        Your browser does not support the video tag.
+</video>
+
+<div id="controls">
+<button onclick="mediaPlayerControl.play()">Play</button>
+<button onclick="mediaPlayerControl.pause()">Pause</button>
+<button onclick="mediaPlayerControl.stop()">Stop</button>
+</div>
+
+<script src="mediaControl.js"></script>
+</body>
+</html>
+

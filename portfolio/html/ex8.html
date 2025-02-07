@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Change Page Color</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #colorInput {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        #changeColorBtn {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+</style>
+</head>
+<body>
+<label for="colorInput">Enter a color:</label>
+<input type="text" id="colorInput" placeholder="e.g., #ff0000 or red">
+<button id="changeColorBtn">Change Color</button>
+
+<script>
+document.getElementById('changeColorBtn').addEventListener('click', function() {
+            var color = document.getElementById('colorInput').value;
+document.body.style.backgroundColor = color;
+        });
+</script>
+</body>
+</html>
